@@ -1,0 +1,103 @@
+/* Main Style */
+body {
+    margin: 0px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(try2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.left {
+    display: flex;
+}
+
+.nav > .left > div {    
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.linkwrapper {
+    height: 24px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.linkwrapper a {
+    color: lightgrey;
+    text-decoration: none;
+   /* transition: color 0.2s; */
+}
+
+.left img{
+    margin-left: -10px;
+    margin-top: -40px;
+}
+
+.linkwrapper:hover {
+    height:24px;
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.linkwraper a:hover {
+    color: salmon;
+}
+
+.activenav {
+border-bottom: 1px solid red;
+}
+
+.activenav a {
+    color: red !important;
+}
+
+/* Middle Page */
+.text {
+    width: 90%;
+    color: lightgrey;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+iframe {
+    margin:100px auto;
+}
+
+.main {
+    display: flex;
+}
+
+.facebook{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.row img:hover {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.interview-text {
+    margin:auto;
+    padding-top: 70px;
+}
